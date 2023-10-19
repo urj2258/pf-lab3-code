@@ -56,6 +56,27 @@ else if(agi>=329850 && agi<418850)
 }
 else if(agi>418850 && agi<628300)
 {
+  tax=agi;
+  tax=((tax+95686)/100)*35;
+}
+else if(agi>=628301)
+{
+  tax=agi;
+  tax=((tax+168933.50)/100)*37;
+}
+if(numChildren==1)
+{
+  totalTax=tax;
+  totalTax-=2000;
+  childCredit=2000;
+}
+else if( numChildren==2)
+{
+  totalTax=tax;
+ totalTax-=4000;
+ childCredit=4000;
+}
+
 
   printf("AGI:          $%10.2f\n", agi);
   printf("Tax:          $%10.2f\n", tax);
