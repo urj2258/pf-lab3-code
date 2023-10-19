@@ -76,7 +76,24 @@ else if( numChildren==2)
  totalTax-=4000;
  childCredit=4000;
 }
-
+else if( numChildren==3)
+{
+  totalTax=tax;
+  totalTax-=6000;
+  childCredit=6000;
+}
+else if( numChildren==4)
+{
+  totalTax=tax;
+  totalTax-=8000;
+  childCredit=8000;
+}
+else if( numChildren==5)
+{
+  totalTax=tax;
+  totalTax-=10000;
+  childCredit=10000;
+}
 
   printf("AGI:          $%10.2f\n", agi);
   printf("Tax:          $%10.2f\n", tax);
