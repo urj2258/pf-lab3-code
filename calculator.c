@@ -56,7 +56,8 @@ int main(int argc, char **argv) {
       printf("%lf is less then %lf",b,a);
     }
   } else if(choice == 6) {
-    result = log
+    result = log(a)/log(b);
+    printf("%lf",result);
   } else {
     printf("Please input a valid operator next time");
   }
